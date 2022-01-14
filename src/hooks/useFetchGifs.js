@@ -1,7 +1,6 @@
 // Custom Hook
 
-import { useState } from 'react';
-import { useEffect } from 'react/cjs/react.development';
+import { useEffect, useState } from 'react';
 import { getGifs } from '../helpers/getGifs';
 
 
@@ -11,7 +10,7 @@ export const useFetchGifs = (category) => {
         data: [],
         loading: true
     });
-
+    
     useEffect(() => {
 
         getGifs(category)
